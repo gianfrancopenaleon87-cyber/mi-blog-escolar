@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestros Proyectos - 4º ESO</title>
+    <style>
+        :root {
+            --emerald: #1ABC9C;
+            --dark-emerald: #16A085;
+            --dark-bg: #34495E;
+            --tag-python: #3776AB;
+            --tag-html: #E44D26;
+            --tag-css: #264DE4;
+            --tag-js: #F0DB4F;
+        }
+
+        body {
+            
+            background-color: #F4F7F6;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-codigo-binario-digital-blanco-gris-brillante_1017-25336.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        
+        nav {
+            background: var(--dark-bg);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 1000px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background: var(--emerald);
+            border-radius: 8px;
+        }
+
+        h1 { color: #2C3E50; margin-bottom: 20px; font-size: 2.5rem; text-shadow: 1px 1px 2px white; }
+
+        
+        .orbita-container {
+            position: relative;
+            width: 850px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        
+        .proyecto-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            border-bottom: 7px solid var(--emerald);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .proyecto-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+            border-bottom-color: var(--dark-bg);
+        }
+
+        .proyecto-card h3 { margin: 10px 0; color: #2C3E50; font-size: 1.2rem; }
+        .proyecto-card p { color: #7F8C8D; font-size: 0.85rem; line-height: 1.4; }
+
+        .tag {
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            align-self: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .tag.python { background: var(--tag-python); }
+        .tag.html { background: var(--tag-html); }
+        .tag.css { background: var(--tag-css); }
+        .tag.js { background: var(--tag-js); color: #333; }
+
+        .btn-mas {
+            color: var(--emerald);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        
+        .card-centro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 340px;
+            height: 290px;
+            padding: 25px;
+            z-index: 10;
+        }
+
+        .btn-tutorial-pro {
+            background: var(--emerald);
+            color: white;
+            padding: 12px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-top: 15px;
+            box-shadow: 0 4px var(--dark-emerald);
+        }
+
+        
+        .card-satelite {
+            position: absolute;
+            width: 240px;
+            height: 190px;
+            padding: 15px;
+        }
+
+        
+        .pos-n { top: 0; left: 50%; transform: translateX(-50%); }
+        .pos-ne { top: 100px; right: 0; }
+        .pos-se { bottom: 100px; right: 0; }
+        .pos-s { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .pos-sw { bottom: 100px; left: 0; }
+        .pos-nw { top: 100px; left: 0; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Galería de Proyectos</h1>
+
+    <div class="orbita-container">
+
+        <a href="detalle-python.html" class="proyecto-card card-centro">
+            <div>
+                <span class="tag python">Python</span>
+                <h3>Calculadora en Python</h3>
+                <p>Aprende los fundamentos interactivos antes de crear tu propia calculadora profesional.</p>
+            </div>
+            <div class="btn-tutorial-pro">ENTRAR AL TUTORIAL →</div>
+        </a>
+
+        <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web" class="proyecto-card card-satelite pos-n" target="_blank">
+            <div>
+                <span class="tag html">HTML/CSS</span>
+                <h3>Mi Primera Web</h3>
+                <p>Guía completa para estructurar y dar estilo a tu primer sitio web.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+        <a href="http://programarcadegames.com/index.php?lang=es" class="proyecto-card card-satelite pos-ne" target="_blank">
+            <div>
+                <span class="tag python">Python</span>
+                <h3>Adivina el Número</h3>
+                <p>Desarrolla la lógica mediante un juego con bucles y números aleatorios.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+        <a href="https://lenguajehtml.com/html/" class="proyecto-card card-satelite pos-se" target="_blank">
+            <div>
+                <span class="tag html">HTML5</span>
+                <h3>Aprendiendo HTML5</h3>
+                <p>Domina las etiquetas modernas y la estructura semántica de la web.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+        <a href="https://lenguajecss.com/css/" class="proyecto-card card-satelite pos-s" target="_blank">
+            <div>
+                <span class="tag css">CSS3</span>
+                <h3>Aprendiendo CSS</h3>
+                <p>Transforma documentos planos en diseños usando Flexbox y Grid.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+        <a href="https://lenguajejs.com/javascript/" class="proyecto-card card-satelite pos-sw" target="_blank">
+            <div>
+                <span class="tag js">JavaScript</span>
+                <h3>Introducción a JS</h3>
+                <p>Aprende variables, eventos y cómo dar dinamismo a tu página.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+        <a href="https://www.marketerosagencia.com/blog/diseno-web/caracteristicas-diseno-web-responsive/" class="proyecto-card card-satelite pos-nw" target="_blank">
+            <div>
+                <span class="tag html">HTML</span> <span class="tag css">CSS</span>
+                <h3>Web Responsive</h3>
+                <p>Crea sitios que se adapten a móviles y tablets perfectamente.</p>
+            </div>
+            <span class="btn-mas">Saber más →</span>
+        </a>
+
+    </div>
+
+</body>
+</html>

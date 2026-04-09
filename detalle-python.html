@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprende Python Básico - 4º ESO</title>
+    <style>
+        :root {
+            --python-blue: #3776ab;
+            --python-yellow: #ffd43b;
+            --dark-bg: #2C3E50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--dark-bg);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--python-yellow);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .nav-back {
+            margin-bottom: 20px;
+        }
+
+        .nav-back a {
+            text-decoration: none;
+            color: var(--python-blue);
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid var(--python-blue);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-back a:hover {
+            background: var(--python-blue);
+            color: white;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-left: 6px solid var(--python-blue);
+        }
+
+        .lesson-card h2 { color: var(--python-blue); margin-top: 0; }
+
+        .code-block {
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .keyword { color: #569cd6; }
+        .string { color: #ce9178; }
+        .comment { color: #6a9955; }
+
+        .btn-try {
+            background: var(--python-yellow);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .btn-try:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+
+        .output {
+            background: #272822;
+            color: #a6e22e;
+            padding: 12px;
+            margin-top: 10px;
+            display: none;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🐍 Tutorial Interactivo de Python</h1>
+    <p>Gian Franco Peña Leon &copy; 2026</p> </header>
+
+<div class="container">
+    <div class="nav-back">
+        <a href="proyectos.html">← Volver a Galería de Proyectos</a>
+    </div>
+
+    <div class="lesson-card">
+        <h2>Hola Mundo y Variables</h2>
+        <p>Python es famoso por ser legible. Mira lo fácil que es crear un mensaje:</p>
+        <div class="code-block">
+            <span class="comment"># Esto es una variable de texto</span><br>
+            mensaje = <span class="string">"¡Bienvenido a mi blog!"</span><br>
+            <span class="keyword">print</span>(mensaje)
+        </div>
+        <button class="btn-try" onclick="toggle('out1')">Ejecutar en consola</button>
+        <div id="out1" class="output">> ¡Bienvenido a mi blog!</div>
+    </div>
+
+    <div class="lesson-card">
+        <h2>Matemáticas Rápidas</h2>
+        <p>Puedes usar Python como una calculadora súper potente.</p>
+        <div class="code-block">
+            numero1 = <span class="keyword">10</span><br>
+            numero2 = <span class="keyword">5</span><br>
+            resultado = numero1 + numero2<br>
+            <span class="keyword">print</span>(resultado)
+        </div>
+        <button class="btn-try" onclick="toggle('out2')">Sumar valores</button>
+        <div id="out2" class="output">> 15</div>
+    </div>
+</div>
+
+<script>
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

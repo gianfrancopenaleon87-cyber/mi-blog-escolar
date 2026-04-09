@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gian Franco Peña Leon">
+    <title>4º ESO Programa - Inicio</title>
+    <style>
+        
+        body {
+            
+            background-color: #F4F7F6;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-codigo-binario-digital-blanco-gris-brillante_1017-25336.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay; /* Suaviza el fondo para que el texto sea legible */
+            color: #333333;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        header, nav, .container, footer {
+            width: 90%;
+            max-width: 1000px;
+            margin: 10px auto;
+        }
+
+        header {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            background: #34495E;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #1ABC9C; /* Color esmeralda de la referencia */
+            border-radius: 8px;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        
+        section {
+            width: 62%;
+            background: rgba(255, 255, 255, 0.95); /* Blanco con ligera transparencia */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        
+        aside {
+            width: 30%;
+            background: #FFFFFF;
+            padding: 25px;
+            border-radius: 15px;
+            
+            
+            transform: rotate(3deg); 
+            position: relative;
+            left: 10px;
+            
+            border: 1px solid #ddd;
+            border-bottom: 5px solid #1ABC9C; /* Detalle esmeralda */
+            box-shadow: 10px 10px 0px rgba(44, 62, 80, 0.1); 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        
+        aside blockquote {
+            background: #fdfdfd;
+            margin: 0;
+            padding: 15px;
+            border-left: 6px solid rgba(26, 188, 156, 0.3);
+            box-shadow: -6px 0 0 #1ABC9C; /* Borde esmeralda sólido */
+            border-radius: 4px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #2C3E50;
+        }
+
+        
+        aside address a {
+            display: block;
+            background: #2C3E50;
+            color: white;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 30px; /* Redondeado como el de proyectos */
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+            box-shadow: 0 4px #1ABC9C;
+            transition: 0.2s;
+        }
+
+        aside address a:hover {
+            background: #1ABC9C;
+            box-shadow: 0 4px #16A085;
+            transform: translateY(-2px);
+        }
+
+        
+        .article-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        article h1 { color: #2C3E50; border-bottom: 2px solid #1ABC9C; padding-bottom: 10px; }
+        article p { line-height: 1.7; font-size: 1.05em; }
+
+        footer {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 50px;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>4º ESO Programa: Nuestro Viaje Digital</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <article>
+                <h1>Primeros pasos con Python</h1>
+                <p>Esta semana, el alumnado de 4º de ESO ha comenzado su aventura en el mundo de la programación real, descubriendo cómo el código puede dar vida a ideas complejas.</p>
+                <img src="https://th.bing.com/th/id/OIP.NtSy8UfQgPrWRjcLDNSSVgHaE1?w=266&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="article-image" alt="Estudiantes programando">
+            </article>
+            
+            <article>
+                <h1>El reto del desarrollo web</h1>
+                <p>Estamos transformando documentos planos en interfaces visuales atractivas usando HTML5 y CSS3, aprendiendo que el diseño y la estructura van de la mano.</p>
+            </article>
+        </section>
+
+        <aside>
+            <blockquote>
+                "La programación es la nueva alfabetización del siglo XXI para todo el alumnado."
+            </blockquote>
+            <blockquote>
+                "El 90% de los estudiantes muestran más interés tras un curso de informática."
+            </blockquote>
+            <address>
+                <a href="https://www.youtube.com/watch?v=HtKqSJX7VoM" target="_blank">🔍 BUSCAR TUTORIALES</a>
+            </address>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Blog educativo creado por Gian Franco Peña Leon &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos de Programación - 4º ESO</title>
+    <style>
+        :root {
+            --emerald: #1ABC9C;
+            --dark-emerald: #16A085;
+            --dark-bg: #2C3E50;
+            --nav-bg: #34495E;
+        }
+
+        body {
+            /* Aplicando el fondo binario de referencia */
+            background-color: #F4F7F6;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-codigo-binario-digital-blanco-gris-brillante_1017-25336.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* Menú de Navegación PRO */
+        nav {
+            background: var(--nav-bg);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 1000px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background: var(--emerald);
+            border-radius: 8px;
+        }
+
+        header {
+            background: var(--dark-bg);
+            color: white;
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .lista-recursos {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95); /* Transparencia para ver el fondo */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .recurso-item {
+            border-left: 6px solid var(--emerald);
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.2s;
+            border-bottom: 1px solid #eee;
+        }
+
+        .recurso-item:hover {
+            transform: translateX(10px);
+            background: #ffffff;
+        }
+
+        .recurso-item h3 { 
+            margin: 0; 
+            color: var(--dark-bg); 
+            font-size: 1.3rem;
+        }
+
+        .recurso-item p {
+            margin: 5px 0 0;
+            color: #7F8C8D;
+        }
+        
+        /* Botón estilo PRO (Esmeralda) */
+        .btn-link {
+            background: var(--dark-bg);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px var(--emerald);
+            transition: 0.2s;
+        }
+
+        .btn-link:hover { 
+            background: var(--emerald); 
+            box-shadow: 0 4px var(--dark-emerald);
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--dark-bg);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--emerald);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Recursos Útiles</h1>
+    </header>
+
+    <div class="lista-recursos">
+        <div class="recurso-item">
+            <div>
+                <h3>W3Schools</h3>
+                <p>Tutoriales interactivos de HTML y CSS.</p>
+            </div>
+            <a href="https://www.w3schools.com" class="btn-link" target="_blank">Visitar</a>
+        </div>
+
+        <div class="recurso-item">
+            <div>
+                <h3>Python.org</h3>
+                <p>Documentación oficial y descarga de Python.</p>
+            </div>
+            <a href="https://www.python.org" class="btn-link" target="_blank">Visitar</a>
+        </div>
+
+        <div class="recurso-item">
+            <div>
+                <h3>Code.org</h3>
+                <p>Ejercicios de lógica de programación.</p>
+            </div>
+            <a href="https://code.org" class="btn-link" target="_blank">Visitar</a>
+        </div>
+
+        <p style="text-align:center;">
+            <a href="principal.html" class="back-link">← Volver al Inicio</a>
+        </p>
+    </div>
+
+</body>
+</html>
